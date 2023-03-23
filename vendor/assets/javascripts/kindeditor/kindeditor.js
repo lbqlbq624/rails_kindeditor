@@ -5,7 +5,7 @@
 * @author Roddy <luolonghao@gmail.com>
 * @website http://www.kindsoft.net/
 * @licence http://www.kindsoft.net/license.php
-* @version 4.1.11 (2016-03-31) libaoquan
+* @version 4.1.11 (2016-03-31)
 *******************************************************************************/
 (function (window, undefined) {
 	if (window.KindEditor) {
