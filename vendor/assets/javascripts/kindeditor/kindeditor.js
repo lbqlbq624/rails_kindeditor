@@ -2,7 +2,7 @@
 * KindEditor - WYSIWYG HTML Editor for Internet
 * Copyright (C) 2006-2016 kindsoft.net
 *
-* @author Roddy <luolonghao@gmail.com>
+* @author Roddy <luolonghao@gmail.com> modify by libaoquan
 * @website http://www.kindsoft.net/
 * @licence http://www.kindsoft.net/license.php
 * @version 4.1.11 (2016-03-31)
@@ -270,7 +270,7 @@ K.options = {
 		'formatblock', 'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold',
 		'italic', 'underline', 'strikethrough', 'lineheight', 'removeformat', '|', 'image', 'multiimage',
 		'flash', 'media', 'insertfile', 'table', 'hr', 'emoticons', 'baidumap', 'pagebreak',
-		'anchor', 'link', 'unlink', '|', 'about'
+		'anchor', 'link', 'unlink', '|','editor135','|', 'about'
 	],
 	noDisableItems : ['source', 'fullscreen'],
 	colorTable : [
@@ -281,6 +281,7 @@ K.options = {
 	],
 	fontSizeTable : ['9px', '10px', '12px', '14px', '16px', '18px', '24px', '32px'],
 	htmlTags : {
+        section: ['id', 'name', 'class', 'style', 'data-role'],
 		font : ['id', 'class', 'color', 'size', 'face', '.background-color'],
 		span : [
 			'id', 'class', '.color', '.background-color', '.font-size', '.font-family', '.background',
@@ -304,7 +305,7 @@ K.options = {
 		],
 		a : ['id', 'class', 'href', 'target', 'name'],
 		embed : ['id', 'class', 'src', 'width', 'height', 'type', 'loop', 'autostart', 'quality', '.width', '.height', 'align', 'allowscriptaccess', 'wmode'],
-        video : ['src', 'width', 'height','controls','class','autoplay'],
+        video : ['src', 'width', 'height','controls','class','autoplay','poster'],
 		img : ['id', 'class', 'src', 'width', 'height', 'border', 'alt', 'title', 'align', '.width', '.height', '.border'],
 		'p,ol,ul,li,blockquote,h1,h2,h3,h4,h5,h6' : [
 			'id', 'class', 'align', '.text-align', '.color', '.background-color', '.font-size', '.font-family', '.background',
@@ -6156,6 +6157,7 @@ KindEditor.lang({
 	unlink : '取消超级链接',
 	fullscreen : '全屏显示',
 	about : '关于',
+    editor135 : '135编辑器',
 	print : '打印(Ctrl+P)',
 	filemanager : '文件空间',
 	code : '插入程序代码',
